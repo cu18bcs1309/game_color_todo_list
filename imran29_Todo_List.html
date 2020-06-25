@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "stylesheet" type="text/css" href="https://fonts.googleapis.com?family=Roboto:400,700,500">
+
+	<link rel = "stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+		<script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.4.js"></script>
+	<title></title>
+	<style type = "text/css">
+		body
+		{ background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* W3C */
+			font-family: Roboto;
+		}
+		#container
+		{
+			
+			width: 360px;
+			margin: 100px auto;
+			background: #f7f7f7;
+			box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+		}
+		.completed
+		{
+			color: gray;
+			text-decoration: line-through;
+		}
+		h1{
+			background: #2980b9;
+			color: white;
+			margin: 0;
+			padding: 10px 20px;
+			text-transform: uppercase;
+			font-size: 24px;
+			font-weight: normal;
+		}
+		li
+		{
+			background: #fff;
+			height: 40px;
+			line-height: 40px;
+			padding-left: 10px;
+			color: #666;
+		}
+		li:nth-child(2n)
+		{
+			background: #f7f7f7;
+		}
+		ul
+		{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		input{
+			font-size: 18px;
+			background-color: #f7f7f7;
+			width: 100%;
+			padding: 13px 13px 13px 20px;
+			box-sizing: border-box;
+			color: #2980b9;
+		}
+		input:focus{
+			background: #f7f7f7;
+			border: 3px solid #2980b9;
+			outline: line;
+		}
+		.fa-plus
+		{
+			float: right;
+		}
+		span{
+			background: red;
+			height: 40px;
+			margin-right: 20px;
+			text-align: center;
+			color: white;
+			width: 0;
+			display: inline-block;
+			transition: 0.2s;
+			opacity: 0;
+		}
+		li:hover span
+		{
+			width:40px;
+			opacity: 1.0;
+		}
+	</style>
+</head>
+<body>
+<div id = "container">
+	<h1>To-do List <i class = "fa fa-plus"></i></h1>
+	<input  type = "text" placeholder="Add New Todo">
+	<ul>
+		<li> <span><i class = "fa fa-trash"></i></span> Go To Potions Class</li>
+		<li> <span><i class = "fa fa-trash"></i></span> Buy New Robes</li>
+		<li> <span><i class = "fa fa-trash"></i></span> Visit Hagrid</li>
+	</ul>
+</div>
+<script type = "text/javascript" src = "imran29_Todo_List.js"></script>
+<!--if($(this).css("color") === "rgb(128, 128, 128)")
+{
+	//console.log("it is currently gray");
+	$(this).css({
+  color:"black",
+	textDecoration: "none"
+});
+}
+
+else{
+	$(this).css({
+  color:"gray",
+	textDecoration: "line-through"
+});
+}-->
+
+</body>
+</html>
